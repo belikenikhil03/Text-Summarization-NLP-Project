@@ -3,7 +3,10 @@ from textSummarizer.utils.common import read_yaml, create_directories
 from textSummarizer.entity.config_entity import DataIngestionConfig
 from textSummarizer.entity.config_entity import DataValidationConfig
 from textSummarizer.entity.config_entity import DataTransformationConfig
+<<<<<<< HEAD
 from textSummarizer.entity.config_entity import ModelTrainerConfig
+=======
+>>>>>>> ad794fc3f944238ab010915f65fd3f83d3ec061f
 
 class ConfigurationManager:
     def __init__(
@@ -56,6 +59,7 @@ class ConfigurationManager:
             tokenizer_name = config.tokenizer_name
         )
 
+<<<<<<< HEAD
         return data_transformation_config
     
     def get_model_trainer_config(self) -> ModelTrainerConfig:
@@ -80,3 +84,6 @@ class ConfigurationManager:
         )
 
         return model_trainer_config
+=======
+        return data_transformation_config
+>>>>>>> ad794fc3f944238ab010915f65fd3f83d3ec061f

@@ -174,6 +174,7 @@ x==========x]
 [2024-08-21 11:36:54,822: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
 
 x==========x]
+<<<<<<< HEAD
 [2024-08-21 12:16:12,644: INFO: config: PyTorch version 2.4.0 available.]
 [2024-08-21 12:28:42,054: INFO: common: yaml file: config\config.yaml loaded successfully]
 [2024-08-21 12:28:42,361: INFO: common: yaml file: params.yaml loaded successfully]
@@ -407,3 +408,5 @@ x==========x]
 [2024-08-21 19:35:54,503: INFO: common: yaml file: params.yaml loaded successfully]
 [2024-08-21 19:35:54,504: INFO: common: created directory at: artifacts]
 [2024-08-21 19:35:54,504: INFO: common: created directory at: artifacts/model_trainer]
+=======
+>>>>>>> ad794fc3f944238ab010915f65fd3f83d3ec061f
