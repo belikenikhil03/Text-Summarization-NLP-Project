@@ -113,3 +113,64 @@ x==========x]
 [2024-08-21 00:26:07,164: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2024-08-21 11:12:15,154: INFO: config: PyTorch version 2.4.0 available.]
+[2024-08-21 11:20:39,481: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-21 11:20:39,877: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-21 11:20:39,993: INFO: common: created directory at: artifacts]
+[2024-08-21 11:20:39,994: INFO: common: created directory at: artifacts/data_transformation]
+[2024-08-21 11:23:57,312: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-21 11:23:57,314: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-21 11:23:57,316: INFO: common: created directory at: artifacts]
+[2024-08-21 11:23:57,317: INFO: common: created directory at: artifacts/data_transformation]
+[2024-08-21 11:36:42,690: INFO: config: PyTorch version 2.4.0 available.]
+[2024-08-21 11:36:44,089: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-21 11:36:44,093: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-21 11:36:44,094: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-21 11:36:44,095: INFO: common: created directory at: artifacts]
+[2024-08-21 11:36:44,096: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-08-21 11:36:47,875: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: FEC7:CF2FA:3E55B9:522AEF:66C583F5
+Accept-Ranges: bytes
+Date: Wed, 21 Aug 2024 06:06:47 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10234-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1724220406.312311,VS0,VE698
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 698acff8bf0b20d1878f818e3e1b67380a4cdbf5
+Expires: Wed, 21 Aug 2024 06:11:47 GMT
+Source-Age: 0
+
+]
+[2024-08-21 11:36:48,115: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-21 11:36:48,116: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-08-21 11:36:48,119: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-21 11:36:48,120: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-21 11:36:48,121: INFO: common: created directory at: artifacts]
+[2024-08-21 11:36:48,121: INFO: common: created directory at: artifacts/data_validation]
+[2024-08-21 11:36:48,123: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-08-21 11:36:48,124: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-08-21 11:36:48,128: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-21 11:36:48,129: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-21 11:36:48,149: INFO: common: created directory at: artifacts]
+[2024-08-21 11:36:48,149: INFO: common: created directory at: artifacts/data_transformation]
+[2024-08-21 11:36:54,822: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
