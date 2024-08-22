@@ -410,3 +410,112 @@ x==========x]
 [2024-08-21 19:35:54,504: INFO: common: created directory at: artifacts/model_trainer]
 =======
 >>>>>>> ad794fc3f944238ab010915f65fd3f83d3ec061f
+[2024-08-21 21:02:46,036: INFO: config: PyTorch version 2.4.0 available.]
+[2024-08-21 21:02:48,401: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-21 21:02:48,404: ERROR: main: while scanning a simple key
+  in "config\config.yaml", line 17, column 1
+could not find expected ':'
+  in "config\config.yaml", line 18, column 17]
+Traceback (most recent call last):
+  File "main.py", line 11, in <module>
+    data_ingestion.main()
+  File "e:\projects\text summarization nlp project\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "e:\projects\text summarization nlp project\src\textSummarizer\config\configuration.py", line 14, in __init__
+    self.config = read_yaml(config_filepath)
+  File "E:\Projects\text summarization NLP project\venv\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\projects\text summarization nlp project\src\textSummarizer\utils\common.py", line 34, in read_yaml
+    raise e
+  File "e:\projects\text summarization nlp project\src\textSummarizer\utils\common.py", line 28, in read_yaml
+    content = yaml.safe_load(yaml_file)
+  File "E:\Projects\text summarization NLP project\venv\lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "E:\Projects\text summarization NLP project\venv\lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "E:\Projects\text summarization NLP project\venv\lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "E:\Projects\text summarization NLP project\venv\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "E:\Projects\text summarization NLP project\venv\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "E:\Projects\text summarization NLP project\venv\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "E:\Projects\text summarization NLP project\venv\lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "E:\Projects\text summarization NLP project\venv\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "E:\Projects\text summarization NLP project\venv\lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "E:\Projects\text summarization NLP project\venv\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "E:\Projects\text summarization NLP project\venv\lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "E:\Projects\text summarization NLP project\venv\lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+  File "E:\Projects\text summarization NLP project\venv\lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+  File "E:\Projects\text summarization NLP project\venv\lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+    raise ScannerError("while scanning a simple key", key.mark,
+yaml.scanner.ScannerError: while scanning a simple key
+  in "config\config.yaml", line 17, column 1
+could not find expected ':'
+  in "config\config.yaml", line 18, column 17
+[2024-08-21 23:03:21,022: INFO: config: PyTorch version 2.4.0 available.]
+[2024-08-21 23:03:22,097: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-21 23:03:22,101: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-21 23:03:22,132: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-21 23:03:22,147: INFO: common: created directory at: artifacts]
+[2024-08-21 23:03:22,148: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-08-21 23:03:27,167: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: E37F:F277C:463AE8:5A6A7F:66C624E5
+Accept-Ranges: bytes
+Date: Wed, 21 Aug 2024 17:33:26 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10223-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1724261606.842379,VS0,VE729
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 95c5124837644802ce0519f08a9db391789bb528
+Expires: Wed, 21 Aug 2024 17:38:26 GMT
+Source-Age: 0
+
+]
+[2024-08-21 23:03:27,306: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-21 23:03:27,307: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-08-21 23:03:27,313: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-21 23:03:27,315: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-21 23:03:27,315: INFO: common: created directory at: artifacts]
+[2024-08-21 23:03:27,316: INFO: common: created directory at: artifacts/data_validation]
+[2024-08-21 23:03:27,317: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-08-21 23:03:27,318: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-08-21 23:03:27,322: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-21 23:03:27,325: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-21 23:03:27,326: INFO: common: created directory at: artifacts]
+[2024-08-21 23:03:27,327: INFO: common: created directory at: artifacts/data_transformation]
+[2024-08-21 23:03:34,949: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-08-21 23:03:34,950: INFO: main: *******************]
+[2024-08-21 23:03:34,950: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-08-21 23:03:34,954: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-21 23:03:34,956: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-21 23:03:34,957: INFO: common: created directory at: artifacts]
+[2024-08-21 23:03:34,958: INFO: common: created directory at: artifacts/model_trainer]

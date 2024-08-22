@@ -19,7 +19,6 @@ class DataValidationConfig:
 class DataTransformationConfig:
     root_dir: Path
     data_path: Path
-<<<<<<< HEAD
     tokenizer_name: Path
 
 @dataclass(frozen=True)
@@ -36,6 +35,4 @@ class ModelTrainerConfig:
     eval_steps: int
     save_steps: float
     gradient_accumulation_steps: int
-=======
-    tokenizer_name: Path
->>>>>>> ad794fc3f944238ab010915f65fd3f83d3ec061f
+

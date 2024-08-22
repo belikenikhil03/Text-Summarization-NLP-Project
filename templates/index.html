@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text Summarizer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Open+Sans:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(45deg, #3498db, #8e44ad);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 95%;
+            max-width: 900px;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-family: 'Open Sans', Arial, sans-serif;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .input-section, .output-section {
+            background-color: #f7f9fc;
+            border: 1px solid #e0e5ec;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .input-section h2, .output-section h2 {
+            font-family: 'Open Sans', Arial, sans-serif;
+            color: #34495e;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        textarea, .summary-text {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            resize: vertical;
+            min-height: 150px;
+            font-size: 1rem;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 300;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #fff;
+            transition: border-color 0.3s ease;
+        }
+        textarea:focus {
+            outline: none;
+            border-color: #2980b9;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25);
+        }
+        input[type="submit"] {
+            font-family: 'Open Sans', Arial, sans-serif;
+            background-color: #e74c3c;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            display: block;
+            margin: 1rem auto;
+            width: 200px;
+        }
+        input[type="submit"]:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .summary-text {
+            border: 1px solid #bdc3c7;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .disclaimer {
+            font-family: 'Open Sans', Arial, sans-serif;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #f39c12;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            text-align: center;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Text Summarizer</h1>
+        <form method="POST">
+            <div class="input-section">
+                <h2>Input Text</h2>
+                <textarea name="text" placeholder="Enter your text here..."></textarea>
+            </div>
+            <input type="submit" value="Summarize">
+        </form>
+        {% if summary %}
+        <div class="output-section">
+            <h2>Summary</h2>
+            <div class="summary-text">{{ summary }}</div>
+        </div>
+        {% endif %}
+        <div class="disclaimer">
+            <strong>Disclaimer:</strong> This is a basic model with limited training. Results may not be optimal. The model will be fine-tuned and improved over time.
+        </div>
+    </div>
+</body>
+</html>

@@ -14,13 +14,11 @@ data_validation:
 data_transformation:
   root_dir: artifacts/data_transformation
   data_path: artifacts/data_ingestion/samsum_dataset
-<<<<<<< HEAD
   tokenizer_name: google/pegasus-cnn_dailymail
 
 model_trainer:
   root_dir: artifacts/model_trainer
   data_path: artifacts/data_transformation/samsum_dataset
   model_ckpt: google/pegasus-cnn_dailymail
-=======
   tokenizer_name: google/pegasus-cnn_dailymail
->>>>>>> ad794fc3f944238ab010915f65fd3f83d3ec061f
+
